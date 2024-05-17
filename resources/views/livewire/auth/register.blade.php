@@ -89,10 +89,10 @@
                         </div>
                         <div class="flex-auto p-6">
 
-                            <form wire:submit.prevent="register">
+                            <form wire:submit="register">
 
                                 <div class="mb-4">
-                                    <input wire:model.lazy="name" type="text"
+                                    <input wire:model.blur="name" type="text"
                                         class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                         placeholder="Name" name="name" aria-label="Name" aria-describedby="email-addon"
                                         required autofocus />
@@ -104,7 +104,7 @@
 
 
                                 <div class="mb-4">
-                                    <input wire:model.lazy="email" type="email"
+                                    <input wire:model.blur="email" type="email"
                                         class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                         placeholder="Email" name="email" aria-label="Email"
                                         aria-describedby="email-addon" required />
@@ -115,7 +115,7 @@
 
 
                                 <div class="mb-4">
-                                    <input wire:model.lazy="password" type="password"
+                                    <input wire:model.blur="password" type="password"
                                         class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                         placeholder="Password" name="password" aria-label="Password"
                                         aria-describedby="password-addon" required />
