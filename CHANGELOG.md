@@ -12,3 +12,6 @@ All notable changes to `Soft UI Dashboard TALL` will be documented in this file.
 ## [1.0.1]
 ### Added
 - Tailwind CSS
+
+## [1.1.0]
+### Update to Laravel 11.x
