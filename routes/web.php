@@ -16,6 +16,7 @@ use App\Http\Livewire\Rtl;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
+use App\Http\Livewire\ProductCategory\ProductCategoryIndexComponent;
 use App\Http\Livewire\VirtualReality;
 use Illuminate\Http\Request;
 
@@ -52,5 +53,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/rtl', Rtl::class)->name('rtl');
     Route::get('/virtual-reality', VirtualReality::class)->name('virtual-reality');
     Route::get('/user-profile', UserProfile::class)->name('user-profile');
+    Route::get('/product_category', ProductCategoryIndexComponent::class)->name('product_category.index');
     Route::get('/user-management', UserManagement::class)->name('user-management');
 });
